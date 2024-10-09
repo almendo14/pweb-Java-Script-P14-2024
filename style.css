@@ -1,0 +1,142 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+}
+
+header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+}
+
+nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+}
+
+nav ul li {
+      margin: 0 15px;
+}
+
+nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+}
+
+#filters {
+      margin: 20px;
+      text-align: center;
+}
+
+#filters label, #filters select {
+      margin: 10px;
+      font-size: 18px;
+}
+
+#products, #cart {
+      padding: 20px;
+}
+
+.product-item {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+      width: 100px;
+}
+
+button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+}
+
+button:hover {
+      background-color: #218838;
+}
+
+#cart {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px 0;
+}
+
+#checkout-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+}
+
+#checkout-btn:hover {
+      background-color: #0056b3;
+}
+
+.buy-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+}
+
+.quantity-control {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+}
+
+.quantity-control button {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      color: #333;
+}
+
+.quantity-control .quantity {
+      font-size: 18px;
+      min-width: 30px;
+      text-align: center;
+}
+
+#pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+}
+
+.page-btn {
+      margin: 0 5px;
+      padding: 5px 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      cursor: pointer;
+}
+
+.page-btn.active {
+      background-color: #007bff;
+      color: white;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produk.html">Produk Kami</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#cart">Keranjang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filter Kategori -->
+    <section id="filters">
+        <label for="category">Filter berdasarkan kategori:</label>
+        <select id="category">
+            <option value="all">Semua</option>
+            <option value="elektronik">Elektronik</option>
+            <option value="pakaian">Pakaian</option>
+            <option value="peralatan">Peralatan</option>
+        </select>
+
+        <label for="items-per-page">Jumlah item per halaman:</label>
+        <select id="items-per-page">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select>
+    </section>
+
+    <!-- Daftar Produk -->
+    <section id="products">
+        <h2>Daftar Produk</h2>
+        <div id="product-list"></div>
+        <div id="pagination"></div>
+    </section>
+
+    <!-- Keranjang -->
+    <section id="cart">
+        <h2>Keranjang Belanja</h2>
+        <div id="cart-items"></div>
+        <p>Total Produk: <span id="total-items">0</span></p>
+        <p>Total Harga: Rp <span id="total-price">0</span></p>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Toko Online. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
